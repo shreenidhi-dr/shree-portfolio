@@ -1446,6 +1446,9 @@ table.rice { min-width: 540px; }
 .fqc-shot figcaption b { display: block; color: var(--ink); font-size: 1.0625rem; font-weight: 500; }
 .fqc-shot figcaption span { display: block; max-width: 62ch; margin-top: 4px; color: var(--ink-2); font-size: .9375rem; line-height: 1.45; }
 @media (max-width: 420px) { #nav-fqc .btn { display: none; } }
+.mgroup li .mv { display: block; margin-bottom: 2px; color: var(--primary); font-family: var(--display); font-size: 1.75rem; font-weight: 600; line-height: 1.1; }
+.mv-note { margin-bottom: 14px; color: var(--ink-2); font-size: .8125rem; letter-spacing: .08em; text-transform: uppercase; }
+.ns-big b { font-family: var(--display); font-size: 1.5em; font-weight: 600; }
 </style>
 
 <svg class="sprite" aria-hidden="true" focusable="false">
@@ -4010,11 +4013,12 @@ table.rice { min-width: 540px; }
     <div class="wrap">
       <div class="sec-head"><p class="kicker">Measuring success</p><h2 class="h2" id="fqc-metrics-title">Count actions, not visits.</h2></div>
       <div class="tree">
-        <div class="ns"><div class="ns-copy"><p class="kicker">North star</p><h3>Students who act on a listing each week</h3><p>The share of weekly visitors who save a listing, move an application forward or add a reminder. It counts help that turned into action, not page views.</p></div></div>
+        <p class="mv-note">Preview with sample numbers, not real usage</p>
+        <div class="ns"><div class="ns-copy"><p class="kicker">North star</p><h3>Students who act on a listing each week</h3><p class="ns-big"><b>37 of 49</b> students (76%) saved a listing, moved an application forward or added a reminder this week.</p><p>It counts help that turned into action, not page views.</p></div></div>
         <div class="grid3">
-          <div class="card mgroup"><p class="k in">Input metrics</p><ul><li>Students signing in each week<span>Counted by Cloudflare Access</span></li><li>Listings saved per student<span>A sign the list is relevant</span></li><li>Reminders added<span>Deadlines and sign-up windows</span></li><li>Applications moved past Saved<span>Applied, Interviewing, Offer</span></li></ul></div>
-          <div class="card mgroup"><p class="k gd">Guardrails</p><ul><li>Visa signals reported wrong<span>Must stay near zero</span></li><li>Data freshness<span>Hours since the last refresh</span></li><li>Load time on a phone<span>One page, no server round trips</span></li></ul></div>
-          <div class="card mgroup"><p class="k bz">Outcomes</p><ul><li>Deadlines and sign-ups missed<span>From a short student survey</span></li><li>Applications to roles open to internationals<span>Share of all tracked applications</span></li><li>Students who tell a classmate<span>“Copy details” is built for group chats</span></li></ul></div>
+          <div class="card mgroup"><p class="k in">Input metrics</p><ul><li><b class="mv">49</b>Students signing in each week<span>Counted by Cloudflare Access, 49 of 50 free seats</span></li><li><b class="mv">4.2</b>Listings saved per student<span>206 saves across 49 students</span></li><li><b class="mv">25</b>Students who added reminders<span>61 reminders for deadlines and sign-ups</span></li><li><b class="mv">58</b>Applications moved past Saved<span>41 Applied, 14 Interviewing, 3 Offer</span></li></ul></div>
+          <div class="card mgroup"><p class="k gd">Guardrails</p><ul><li><b class="mv">0</b>Visa signals reported wrong<span>Target: fewer than 1 a week</span></li><li><b class="mv">9 h</b>Data freshness<span>Median age of listings; never over 24 h</span></li><li><b class="mv">1.4 s</b>Load time on a phone<span>One page, no server round trips</span></li></ul></div>
+          <div class="card mgroup"><p class="k bz">Outcomes</p><ul><li><b class="mv">−60%</b>Deadlines and sign-ups missed<span>5 to 2 per student a month, survey of 31</span></li><li><b class="mv">68%</b>Applications to roles open to internationals<span>Of all tracked applications</span></li><li><b class="mv">16</b>Students who told a classmate<span>33% of weekly users, via “Copy details”</span></li></ul></div>
         </div>
       </div>
     </div>
