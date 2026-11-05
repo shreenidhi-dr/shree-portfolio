@@ -1,3 +1,9 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style>
 <title>Shreenidhi Doddathota</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -6,6 +12,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira:wdth,wght@75..125,400..700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&display=swap">
 <style>
 /* Layout: a playful, Material-style product page. White canvas, Google Sans Flex, four bright accent colors,
    rounded tonal cards on a strict equal-height grid, soft geometric shapes, pictures for every result. Desktop first. */
@@ -335,6 +342,57 @@
   --lo-bg: #E1F0E7;
   --display: "Newsreader", Georgia, "Times New Roman", serif;
   color-scheme: light;
+}
+
+:root[data-view="compass"] {
+  --bg: #050E26;
+  --surface: #0B1736;
+  --raised: #10204A;
+  --container: #081330;
+  --container-hi: #13245A;
+  --inset: #13234B;
+  --ink: #EEF2FB;
+  --ink-2: #B9C4E2;
+  --ink-3: #8A97BB;
+  --line: #22325E;
+  --line-soft: #162550;
+  --primary: #FFD960;
+  --primary-hover: #FFE58A;
+  --on-primary: #1B1500;
+  --primary-container: #3A3214;
+  --on-primary-container: #FFE9A3;
+  --accent-text: #FFD960;
+  --on-color: #050E26;
+  --blue: #8AB4FF;
+  --red: #FF8F87;
+  --yellow: #FFD960;
+  --green: #6FD49C;
+  --t-blue: #102555;
+  --t-red: #3A1915;
+  --t-yellow: #3A3214;
+  --t-green: #10301D;
+  --illus-n: #4A5A86;
+  --illus-n2: #22325E;
+  --illus-w: #13245A;
+  --hero-tint: #13245A;
+  --before: #4F6BB8;
+  --after: #FFD960;
+  --on-before: #FFFFFF;
+  --on-after: #1B1500;
+  --track: #22325E;
+  --tip-bg: #EEF2FB;
+  --tip-fg: #050E26;
+  --sh-1: 0 1px 2px rgba(0, 0, 0, 0.6), 0 1px 3px 1px rgba(0, 0, 0, 0.35);
+  --sh-2: 0 1px 2px rgba(0, 0, 0, 0.6), 0 2px 6px 2px rgba(0, 0, 0, 0.35);
+  --sh-3: 0 4px 8px 3px rgba(0, 0, 0, 0.4), 0 1px 3px rgba(0, 0, 0, 0.6);
+  --hi: #FF8F87;
+  --med: #F1B25C;
+  --lo: #6FD49C;
+  --hi-bg: #3A1915;
+  --med-bg: #36270E;
+  --lo-bg: #10301D;
+  --display: "EB Garamond", Georgia, "Times New Roman", serif;
+  color-scheme: dark;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -1336,6 +1394,58 @@ table.rice { min-width: 540px; }
 .wfq { align-self: flex-end; max-width: 86%; padding: 6px 9px; border-radius: 10px; background: var(--wf-block); color: var(--wf-ink); font-size: 10px; font-weight: 600; }
 .wfchips { display: flex; gap: 4px; }
 .wfchips span { padding: 1px 6px; border: 1.5px solid var(--wf-line); border-radius: 999px; color: var(--wf-ink); font-size: 8.5px; font-weight: 700; }
+
+/* Fuqua Compass: a built and shipped product. Duke navy and Dandelion gold, EB Garamond display, real product screens */
+.xcase.compass { --xc-accent: #FFD960; --xc-on: #1B1500; --xc-ink: #EEF2FB; --xc-ink2: #B9C4E2; background: radial-gradient(80% 55% at 88% 100%, rgba(0, 83, 155, 0.6), transparent 70%), repeating-radial-gradient(circle at 96% 4%, transparent 0 26px, rgba(255, 255, 255, 0.045) 26px 27px), #041033; }
+.xcase.compass > * { position: relative; }
+.xcase.compass h3 { font-family: "EB Garamond", Georgia, serif; font-weight: 600; letter-spacing: -0.01em; }
+.xcase.compass .phone { box-shadow: 0 0 0 1px #2A3D6B, 0 24px 60px rgba(255, 217, 96, 0.14); }
+.xc-body .xc-live { margin-top: -6px; color: var(--xc-accent); }
+/* The one shipped product spans the row in the three-column layout; the concepts sit below it. */
+.xc-stage { display: none; }
+@media (min-width: 1240px) {
+  .xcase.feature { grid-column: 1 / -1; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); grid-template-rows: auto 1fr; column-gap: clamp(40px, 4vw, 64px); padding: 44px 44px 0; }
+  .xcase.feature .xc-top, .xcase.feature .xc-body { grid-column: 1; }
+  .xcase.feature .xc-body { padding: 26px 0 44px; }
+  .xcase.feature h3 { font-size: clamp(2.5rem, 1.6rem + 1.4vw, 3.1rem); }
+  .xcase.feature .xc-line { font-size: 1.0625rem; }
+  .xcase.feature .xc-phone { display: none; }
+  .xcase.feature .xc-stage { display: block; grid-column: 2; grid-row: 1 / span 2; align-self: center; margin-bottom: 44px; }
+}
+.screen.pic { background: #0A1121; }
+.screen.pic img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+#view-fqc h1, #view-fqc .h2, #view-fqc .statement, #view-fqc .ns h3 { font-family: var(--display); font-weight: 600; letter-spacing: -0.01em; font-variation-settings: normal; }
+#view-fqc h1 { margin-top: 22px; font-size: clamp(2.7rem, 1.5rem + 2.9vw, 4.3rem); line-height: 1.03; text-wrap: balance; }
+#view-fqc h1 .hl { display: block; text-wrap: balance; }
+#view-fqc h1 .hl, #view-fqc .why-panel .h2 em { color: var(--primary); font-style: italic; font-weight: 500; }
+#view-fqc .h2 { font-size: clamp(2.3rem, 1.35rem + 2.3vw, 3.7rem); }
+#view-fqc .hero-sub { max-width: 34em; }
+#view-fqc .stat-card .big { color: var(--primary); font-family: var(--display); font-weight: 600; }
+#view-fqc .hud-chip .dot { box-shadow: 0 0 0 3px rgba(255, 217, 96, 0.18), 0 0 12px rgba(255, 217, 96, 0.7); }
+#view-fqc .why-panel { background: linear-gradient(135deg, #0B2A6B, #050E26 70%); color: var(--ink); box-shadow: inset 0 0 0 1px #22325E; }
+#view-fqc .why-panel .kicker, #view-fqc .why-panel .link { color: var(--primary); opacity: 1; }
+#view-fqc .why-panel .lead, #view-fqc .why-panel .lead b { color: var(--ink); opacity: 1; }
+.fqc-hero { position: relative; overflow: hidden; padding-block: clamp(20px, 3vw, 40px) clamp(40px, 5vw, 64px); background: radial-gradient(60% 70% at 82% 34%, rgba(0, 83, 155, 0.5), transparent 70%), linear-gradient(180deg, #041033, #050E26); }
+.fqc-hero::before { content: ""; position: absolute; inset: 0; background-image: repeating-radial-gradient(circle at 80% 30%, transparent 0 38px, rgba(255, 255, 255, 0.05) 38px 39px); -webkit-mask-image: radial-gradient(65% 75% at 78% 34%, #000 25%, transparent 75%); mask-image: radial-gradient(65% 75% at 78% 34%, #000 25%, transparent 75%); pointer-events: none; }
+.fqc-hero > .wrap { position: relative; }
+.fqc-hero-grid { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: 48px; align-items: center; }
+@media (max-width: 1000px) { .fqc-hero-grid { grid-template-columns: minmax(0, 1fr); } }
+.fqc-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-top: 28px; }
+.fqc-stage { position: relative; margin: 0; padding: 0 0 44px 34px; }
+.browser { overflow: hidden; border-radius: 14px; background: #0B1736; box-shadow: 0 0 0 1px #2A3D6B, 0 30px 70px rgba(0, 0, 0, 0.45); }
+.browser .bar { display: flex; align-items: center; gap: 7px; height: 30px; padding: 0 12px; background: #13234B; }
+.browser .bar i { flex: none; width: 10px; height: 10px; border-radius: 50%; background: #34446C; }
+.browser .bar span { min-width: 0; margin-left: 10px; padding: 2px 12px; overflow: hidden; border-radius: 6px; background: #0B1736; color: #8A97BB; font-size: .75rem; white-space: nowrap; text-overflow: ellipsis; }
+.browser img { display: block; width: 100%; height: auto; }
+.fqc-stage .phone { position: absolute; left: 0; bottom: 0; width: 30%; max-width: 190px; padding: 6px; border-radius: 30px; }
+.fqc-stage .phone .screen { border-radius: 25px; }
+.fqc-shots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(28px, 3.4vw, 44px) clamp(20px, 3vw, 32px); }
+@media (max-width: 800px) { .fqc-shots { grid-template-columns: minmax(0, 1fr); } }
+.fqc-shot { min-width: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+.fqc-shot.wide { grid-column: 1 / -1; }
+.fqc-shot figcaption b { display: block; color: var(--ink); font-size: 1.0625rem; font-weight: 500; }
+.fqc-shot figcaption span { display: block; max-width: 62ch; margin-top: 4px; color: var(--ink-2); font-size: .9375rem; line-height: 1.45; }
+@media (max-width: 420px) { #nav-fqc .btn { display: none; } }
 </style>
 
 <svg class="sprite" aria-hidden="true" focusable="false">
@@ -1403,6 +1513,14 @@ table.rice { min-width: 540px; }
       <button type="button" class="opt" data-go="syw-options">Options</button>
       <button type="button" class="opt2" data-go="syw-solution">Solution</button>
       <button type="button" class="opt" data-go="syw-metrics">Metrics</button>
+      <a class="btn" href="#contact">Contact</a>
+    </nav>
+    <nav class="nav-links" id="nav-fqc" aria-label="Case study sections" hidden>
+      <a href="#product">← Portfolio</a>
+      <button type="button" class="opt" data-go="fqc-journey">Journey</button>
+      <button type="button" class="opt" data-go="fqc-decisions">Decisions</button>
+      <button type="button" class="opt2" data-go="fqc-solution">Solution</button>
+      <button type="button" class="opt" data-go="fqc-metrics">Metrics</button>
       <a class="btn" href="#contact">Contact</a>
     </nav>
   </div>
@@ -1943,10 +2061,34 @@ table.rice { min-width: 540px; }
     <div class="wrap">
       <div class="sec-head center">
         <p class="kicker">Product thinking · Self-initiated</p>
-        <h2 class="h2" id="prod-title">Three product case studies, start to finish.</h2>
-        <p class="lead">Each one starts from public evidence of a real problem, scores the options, designs the fix and plans the experiment that would prove it.</p>
+        <h2 class="h2" id="prod-title">Four product case studies, start to finish.</h2>
+        <p class="lead">One product I built and shipped, and three concepts. Each starts from evidence of a real problem, weighs the options, designs the fix and says how I’d know it worked.</p>
       </div>
       <div class="xcases">
+        <article class="xcase compass feature" aria-labelledby="xc-fqc">
+          <div class="xc-top">
+            <p class="xc-kick">Duke Fuqua · Recruiting · Live</p>
+            <h3 id="xc-fqc">Fuqua Compass</h3>
+            <p class="xc-line">International students at Fuqua check three places for jobs and events, then open every posting to see whether they can apply. Fuqua Compass puts <b>everything in one list, sorted by what to do next</b>, with a visa signal on every listing.</p>
+          </div>
+          <div class="xc-body">
+            <ul class="xc-facts">
+              <li><b>About 700 listings, one list</b><span>Jobs, coffee chats and club events</span></li>
+              <li><b>A visa signal on every listing</b><span>The label, plus the posting’s own words</span></li>
+              <li><b>Built and shipped</b><span>Live behind Duke sign-in since November 2026</span></li>
+            </ul>
+            <a class="btn" href="#fuqua-compass">Read the case study<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="link xc-live" href="https://fuqua-compass.pages.dev" target="_blank" rel="noopener">Open the live site (Duke sign-in)</a>
+            <p class="fine">Student project, not an official Duke or Fuqua site. Screens use sample data.</p>
+          </div>
+          <div class="xc-phone" aria-hidden="true">
+            <div class="phone"><div class="screen pic"><img src="fuqua-compass/phone-today.webp" width="1170" height="2532" alt="" loading="lazy"></div></div>
+          </div>
+          <div class="xc-stage fqc-stage" aria-hidden="true">
+            <div class="browser"><div class="bar"><i></i><i></i><i></i><span>fuqua-compass.pages.dev</span></div><img src="fuqua-compass/today.webp" width="2560" height="1600" alt="" loading="lazy"></div>
+            <div class="phone"><div class="screen pic"><img src="fuqua-compass/phone-today.webp" width="1170" height="2532" alt="" loading="lazy"></div></div>
+          </div>
+        </article>
         <article class="xcase auto" aria-labelledby="xc-stall">
           <div class="xc-top">
             <p class="xc-kick">Tesla app · EV charging</p>
@@ -2100,7 +2242,7 @@ table.rice { min-width: 540px; }
         <li class="now" style="--dot: var(--primary)">
           <div class="xp-top"><p class="yr">2026–2028</p><span class="xic c-blue" aria-hidden="true"><svg viewBox="0 0 24 24"><use href="#i-school"/></svg></span></div>
           <h3>Duke Fuqua</h3><p class="pos">MBA candidate</p>
-          <p class="desc">GMAT Focus 735 (99th percentile). Merit Scholarship recipient. Pairing my technology experience with a stronger grounding in business.</p>
+          <p class="desc">GMAT Focus 735 (99th percentile). Merit Scholarship recipient. Pairing my technology experience with a stronger grounding in business. Built and shipped <a href="#fuqua-compass">Fuqua Compass</a>, a recruiting tool for Fuqua’s international students.</p>
         </li>
       </ol>
       <div class="tools">
@@ -3651,6 +3793,272 @@ table.rice { min-width: 540px; }
   </section>
 </div>
 
+<div id="view-fqc" hidden>
+  <section class="fqc-hero" aria-labelledby="fqc-title">
+    <div class="wrap fqc-hero-grid">
+      <div class="fqc-copy">
+        <a class="hud-chip" href="#product"><span class="dot"></span>Product case study · Built and shipped · Self-initiated</a>
+        <h1 id="fqc-title">Recruiting at Fuqua, <span class="hl">sorted by what to do next.</span></h1>
+        <p class="hero-sub">International students at Duke’s Fuqua School of Business check three places for jobs, coffee chats and club events, then open every posting to learn whether they can even apply. I designed and built Fuqua Compass: one list of every opportunity, a visa signal on each listing, and a countdown to every deadline and sign-up.</p>
+        <dl class="meta">
+          <div><dt>Author</dt><dd>Shreenidhi Doddathota</dd></div>
+          <div><dt>My role</dt><dd>Product, design and build</dd></div>
+          <div><dt>Date</dt><dd>November 2026</dd></div>
+          <div><dt>Status</dt><dd>Live, Duke sign-in</dd></div>
+        </dl>
+        <div class="fqc-cta">
+          <a class="btn" href="https://fuqua-compass.pages.dev" target="_blank" rel="noopener">Open the live site<svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-open"/></svg></a>
+          <button type="button" class="btn outline" data-go="fqc-solution">See the screens</button>
+        </div>
+        <p class="disclaimer">Student project, not an official Duke University or Fuqua School of Business site. The live site is open only to Duke email addresses, so every screen on this page uses sample data with fictional companies. Built with Claude Code.</p>
+      </div>
+      <figure class="fqc-stage">
+        <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>fuqua-compass.pages.dev</span></div><img src="fuqua-compass/today.webp" width="2560" height="1600" alt="The Today view of Fuqua Compass: a navy banner that greets the student by name, gold counts of 3 deadlines in 72 hours, 5 sign-up windows and 6 new listings, a Next move card counting down to an application due at 11:59 PM, and a seven-day strip. Sample data."></div>
+        <div class="phone"><div class="screen pic"><img src="fuqua-compass/phone-today.webp" width="1170" height="2532" alt="The same Today view on a phone, in dark mode. Sample data."></div></div>
+      </figure>
+    </div>
+    <div class="wrap">
+      <div class="spec-row">
+        <div><p class="k">The problem</p><p>Jobs, coffee chats and club events live in three places, and each posting hides whether international students can apply.</p></div>
+        <div><p class="k">The insight</p><p>Students don’t need another list. They need to know what to act on next, and whether it’s open to them.</p></div>
+        <div><p class="k">The fix</p><p>One list sorted by what needs action, a visa signal on every CareerBridge listing, and a tracker for every application.</p></div>
+        <div><p class="k">Where it stands</p><p>Live for Fuqua students behind Duke sign-in, rebuilt from the source feeds on each refresh.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" aria-labelledby="fqc-context">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Context</p><h2 class="h2" id="fqc-context">One recruiting season, three places to check.</h2></div>
+      <div class="grid4">
+        <article class="card stat-card"><p class="big">3</p><p class="txt">places to check: CareerBridge’s job board, CareerBridge’s employer events and FuquaConnect for club events.</p><p class="cite">Fuqua’s student tools</p></article>
+        <article class="card stat-card"><p class="big">503</p><p class="txt">jobs open on CareerBridge on Nov 4, 2026, out of 1,278 postings this fall.</p><p class="cite">Compass data, Nov 4, 2026</p></article>
+        <article class="card stat-card"><p class="big">225</p><p class="txt">of those open jobs required permanent US work authorization. Only 204 accepted every work authorization.</p><p class="cite">Compass data, Nov 4, 2026</p></article>
+        <article class="card stat-card"><p class="big">104</p><p class="txt">postings mentioned sponsorship in their text. In 6, the text contradicted the label.</p><p class="cite">Compass data, Nov 4, 2026</p></article>
+      </div>
+      <p class="lead note-box">Summer internships don’t need visa sponsorship: international students work on <b>Curricular Practical Training</b>, which Duke authorizes. An employer that marks a posting “Permanent US Work Authorization Required” has still chosen not to consider them, and that label sits inside each posting. <a class="link" href="https://visaservices.duke.edu/visa-categories/f-1/f-1-curricular-practical-training-cpt/" target="_blank" rel="noopener">Duke Visa Services on CPT</a></p>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="fqc-users">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Users</p><h2 class="h2" id="fqc-users">Three students, one recruiting season.</h2></div>
+      <div class="grid3">
+        <article class="card user stack"><p class="tag">Primary user</p><h3>The first-year international student</h3><p class="txt">Hunting a summer internship while learning how Fuqua recruiting works. Needs to know which roles are open to F-1 students and when each coffee chat opens.</p><p class="job"><b>Job to be done</b>When I check recruiting between classes, I want to see what I must act on today and whether I can apply, so I never miss a sign-up or spend time on roles closed to me.</p></article>
+        <article class="card user stack"><p class="tag">Secondary user</p><h3>The second-year job seeker</h3><p class="txt">Applying for full-time roles that will need H-1B sponsorship after OPT.</p><p class="job"><b>Job to be done</b>When I look at full-time roles, I want to see each employer’s stance on work authorization, so I can focus on the ones that will hire me.</p></article>
+        <article class="card user stack"><p class="tag">Also served</p><h3>Every other Fuqua student</h3><p class="txt">Doesn’t need a visa, but checks the same three places and keeps the same spreadsheet.</p><p class="job"><b>Job to be done</b>When recruiting picks up, I want one list with reminders, so nothing slips.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="fqc-journey" aria-labelledby="fqc-journey-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Today’s journey</p><h2 class="h2" id="fqc-journey-title">Five steps across three places.</h2></div>
+      <ol class="journey">
+        <li class="step"><p class="n">Step 1 · Search</p><h3>Find roles that fit</h3><span class="sev med">Medium friction</span><p class="e">CareerBridge lists 500+ open jobs. Filters help, but every list mixes in roles you can’t apply for.</p></li>
+        <li class="step"><p class="n">Step 2 · Check</p><h3>Can I even apply?</h3><span class="sev hi">High friction</span><p class="e">The work authorization label sits inside each posting, and the description can say the opposite.</p></li>
+        <li class="step"><p class="n">Step 3 · Sign up</p><h3>Catch the coffee chat</h3><span class="sev hi">High friction</span><p class="e">Sign-ups open and close at set times. In the Nov 4 data, one coffee chat had all 24 seats taken and 37 students on the waitlist.</p></li>
+        <li class="step"><p class="n">Step 4 · Clubs</p><h3>Check FuquaConnect too</h3><span class="sev med">Medium friction</span><p class="e">Club treks, panels and info sessions live in a separate system with its own calendar.</p></li>
+        <li class="step"><p class="n">Step 5 · Track</p><h3>Keep it all straight</h3><span class="sev med">Medium friction</span><p class="e">Deadlines, application status and notes end up in a personal spreadsheet.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec alt" id="fqc-evidence" aria-labelledby="fqc-evidence-title">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Evidence</p><h2 class="h2" id="fqc-evidence-title">What the real data showed.</h2><p class="lead">The first build ran on sample data. The live feeds broke it in nine places, and each one would have misled a student.</p></div>
+      <div class="grid3">
+        <article class="card quote"><p class="yr">Label vs. text</p><p class="q">A posting labeled “All Work Authorizations Accepted” said candidates <q>must be a U.S. citizen or national</q>. Six open postings had a conflict like this.</p><p class="cite">Compass data, Nov 4, 2026</p></article>
+        <article class="card quote"><p class="yr">Two data layouts</p><p class="q">423 of 1,278 job postings stored their function and industry under different field names. Reading one layout would hide a third of jobs from interest filters.</p><p class="cite">Compass data, Nov 4, 2026</p></article>
+        <article class="card quote"><p class="yr">Midnight deadlines</p><p class="q">15 open jobs were due at “12:00 AM”, which is the end of the day before. Compass shows them as 11:59 PM that day, so nobody loses a day.</p><p class="cite">Compass data, Nov 4, 2026</p></article>
+        <article class="card quote"><p class="yr">Duplicates</p><p class="q">721 event records were 592 real events. The same events arrived through two accounts, so Compass keeps the most recent copy of each.</p><p class="cite">Compass data, Nov 4, 2026</p></article>
+        <article class="card quote"><p class="yr">Recurring events</p><p class="q">Weekly club sessions arrived as one long range, from the first session to the last. Compass works out the next session instead.</p><p class="cite">Compass data, Nov 4, 2026</p></article>
+        <article class="card quote"><p class="yr">Contact data</p><p class="q">Recruiter names, emails and phone numbers came with the feeds. None of it reaches the page, and the build refuses to publish if an email slips through.</p><p class="cite">Compass build rules</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="fqc-problem">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">The problem</p><h2 class="h2" id="fqc-problem">Lots of listings. No sense of what’s next.</h2></div>
+      <p class="statement">Recruiting at Fuqua is spread across three places, and none of them tells an international student what to do next. <span>So students check everything, miss sign-up windows and spend time on roles that were never open to them.</span></p>
+      <div class="grid3 causes">
+        <article class="card stack cause"><span class="own app">Compass can fix</span><h3>Three places to check</h3><p class="txt">Jobs, employer events and club events each have their own search and calendar.</p></article>
+        <article class="card stack cause"><span class="own app">Compass can fix</span><h3>Eligibility is buried</h3><p class="txt">The work authorization label is one field inside each posting, not something you can sort a list by.</p></article>
+        <article class="card stack cause"><span class="own app">Compass can fix</span><h3>Label and text disagree</h3><p class="txt">A posting can say “all accepted” in the label and “U.S. citizens only” in the description.</p></article>
+        <article class="card stack cause"><span class="own app">Compass can fix</span><h3>Windows open and close</h3><p class="txt">Coffee chat sign-ups run on fixed times. Students have to remember to be there.</p></article>
+        <article class="card stack cause"><span class="own app">Compass can fix</span><h3>Nowhere to track</h3><p class="txt">No system remembers what you applied to once the posting closes.</p></article>
+        <article class="card stack cause"><span class="own">Employers</span><h3>Who gets sponsored</h3><p class="txt">Each employer decides whom it will sponsor. Compass can make that clear, not change it.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="fqc-decisions" aria-labelledby="fqc-decisions-title" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Decisions</p><h2 class="h2" id="fqc-decisions-title">Five calls that shaped the product.</h2></div>
+      <div class="card">
+        <div class="tscroll">
+          <table class="ba">
+            <thead><tr><th scope="col">Decision</th><th scope="col">The obvious option</th><th scope="col">What I chose, and why</th></tr></thead>
+            <tbody>
+              <tr><td>Who can see it</td><td class="now-col">A public website anyone can find</td><td>Sign-in with a one-time code sent to any Duke email address. The listings are meant for Fuqua students.</td></tr>
+              <tr><td>How it’s built</td><td class="now-col">An app with a server and a database</td><td>One self-contained page with the data inside. Nothing to run or patch, it loads fast on a phone, and hosting is free.</td></tr>
+              <tr><td>Personal data</td><td class="now-col">Accounts, so lists sync across devices</td><td>No accounts and no tracking. Each student’s list and notes stay in their own browser.</td></tr>
+              <tr><td>The visa signal</td><td class="now-col">Show the employer’s label as is</td><td>Show the label and read the posting text. When they disagree, flag it and quote the posting’s exact words.</td></tr>
+              <tr><td>What a row shows</td><td class="now-col">Every detail, as badges</td><td>One visa signal and one status per row. Everything else opens in a side panel.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="cite scroll-hint">Swipe the table sideways to see every column.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="fqc-solution" aria-labelledby="fqc-solution-title">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">The solution</p><h2 class="h2" id="fqc-solution-title">Fuqua Compass, screen by screen.</h2><p class="lead">Every view opens on what needs you, then gets out of the way. <b>Sample data, real product:</b> these screens come from the live code, running on fictional listings.</p></div>
+      <div class="fqc-shots">
+        <figure class="fqc-shot wide">
+          <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>fuqua-compass.pages.dev · Today</span></div><img src="fuqua-compass/act-now.webp" width="2560" height="1720" loading="lazy" alt="The Act now list: an application due in 52 minutes, coffee chat sign-ups closing tomorrow at 8:00 AM, sign-ups opening tomorrow at noon, and a breakfast that is full with 9 on the waitlist. Each row shows a time, a company monogram, one visa signal and one status. Sample data."></div>
+          <figcaption><b>Act now</b><span>Every deadline and sign-up window in the next 72 hours, in order. Each row carries one visa signal and one status, so the list stays readable.</span></figcaption>
+        </figure>
+        <figure class="fqc-shot">
+          <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>Listing details</span></div><img src="fuqua-compass/panel.webp" width="2560" height="1720" loading="lazy" alt="A listing’s detail panel showing Mixed signals: the CareerBridge label says all work authorizations are accepted, but the posting says candidates must be a U.S. citizen or national. Sample data."></div>
+          <figcaption><b>Mixed signals, caught</b><span>The label says open to all; the posting limits it to U.S. citizens and permanent residents. Compass shows both, in the posting’s own words.</span></figcaption>
+        </figure>
+        <figure class="fqc-shot">
+          <div class="browser"><div class="bar" aria-hidden="true"><i></i><i></i><i></i><span>Employers</span></div><img src="fuqua-compass/employers.webp" width="2560" height="1720" loading="lazy" alt="The Employers view: a grid of company cards, each with a monogram, its jobs and events, and a bar showing how many postings are open to all work authorizations. Sample data."></div>
+          <figcaption><b>Who’s hiring internationals</b><span>Each employer’s current postings, split by work authorization, with a follow star and a link to its H-1B history.</span></figcaption>
+        </figure>
+      </div>
+      <div class="phones n3">
+        <figure class="shot">
+          <div class="phone"><div class="screen pic"><img src="fuqua-compass/phone-list.webp" width="1170" height="2532" loading="lazy" alt="My list on a phone: a route from To apply (2) to Applied (1) to Interviewing (1) to Offers (0), and a coffee chat marked Going. Sample data."></div></div>
+          <figcaption><b>Track every application</b><span>Saved, Applied, Interviewing, Offer. Entries stay after the posting closes.</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="phone"><div class="screen pic"><img src="fuqua-compass/phone-panel.webp" width="1170" height="2532" loading="lazy" alt="A listing on a phone with its status set to Interviewing, a note about case interview prep, and Google and Outlook links to add a reminder to apply. Sample data."></div></div>
+          <figcaption><b>Notes and reminders</b><span>Status, notes and one-tap calendar reminders on every listing.</span></figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="phone"><div class="screen pic"><img src="fuqua-compass/phone-visa.webp" width="1170" height="2532" loading="lazy" alt="The Visa guide on a phone in dark mode, with passport-stamp labels for CPT, OPT and H-1B."></div></div>
+          <figcaption><b>Visa basics, with sources</b><span>CPT, OPT and the H-1B lottery, explained for F-1 students.</span></figcaption>
+        </figure>
+      </div>
+      <div class="card" style="margin-top:clamp(36px,5vw,56px)">
+        <div class="tscroll">
+          <table class="ba">
+            <thead><tr><th scope="col">Step</th><th scope="col">Before</th><th scope="col">With Fuqua Compass</th></tr></thead>
+            <tbody>
+              <tr><td>Find</td><td class="now-col">Search two CareerBridge lists and FuquaConnect</td><td>One list, filtered to your program and interests</td></tr>
+              <tr><td>Check</td><td class="now-col">Open each posting and read the fine print</td><td>A visa signal on every row, with the posting’s own words one tap away</td></tr>
+              <tr><td>Sign up</td><td class="now-col">Remember when each window opens</td><td>A live countdown, plus a calendar reminder in one tap</td></tr>
+              <tr><td>Track</td><td class="now-col">A personal spreadsheet</td><td>A status and notes on every listing</td></tr>
+              <tr><td>Catch up</td><td class="now-col">Rescan everything</td><td>What’s new since your last visit, marked</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="fqc-how">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">How it works</p><h2 class="h2" id="fqc-how">Three feeds in, one page out.</h2></div>
+      <div class="flowd">
+        <div class="col">
+          <div class="node"><b>CareerBridge jobs</b><span>About 1,300 postings this fall</span></div>
+          <div class="node"><b>CareerBridge events</b><span>Coffee chats, presentations, workshops</span></div>
+          <div class="node"><b>FuquaConnect</b><span>Club and school events</span></div>
+        </div>
+        <div class="arr" aria-hidden="true">→</div>
+        <div class="node core"><b>Clean and enrich</b><span>Remove duplicates, read dates across time zones, drop contact data, read sponsorship language, map interests</span></div>
+        <div class="arr" aria-hidden="true">→</div>
+        <div class="col">
+          <div class="node"><b>One self-contained page</b><span>About 500 KB, no server</span></div>
+          <div class="node"><b>Duke-only sign-in</b><span>Cloudflare Pages and Cloudflare Access</span></div>
+          <div class="node"><b>Your list stays with you</b><span>Saved in your browser, never uploaded</span></div>
+        </div>
+      </div>
+      <div class="rules card">
+        <p class="kicker">Privacy rules, enforced in code</p>
+        <ol>
+          <li><b>Contact fields are never copied.</b> Free text is scrubbed of emails and phone numbers.</li>
+          <li><b>The build refuses to publish</b> if an email address survives anywhere in the page.</li>
+          <li><b>Uploads refuse to run</b> unless Duke sign-in guards every address of the site, previews included.</li>
+          <li><b>No accounts and no tracking.</b> A student’s list and notes never leave their browser.</li>
+        </ol>
+        <p class="cite" style="margin-top:14px">Quality checks: 28 automated interaction tests, plus screenshot checks at phone and desktop widths in light and dark mode.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="fqc-rollout" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Building and shipping</p><h2 class="h2" id="fqc-rollout">Sample data first, then the real thing.</h2></div>
+      <ol class="phases">
+        <li class="phase on"><p class="when">Step 1</p><h3>Build on sample data</h3><p>Data cleaning, the visa logic, the page and its tests, all proven on fake listings in the real feed format.</p></li>
+        <li class="phase on"><p class="when">Step 2</p><h3>Run on the real feeds</h3><p>The first real build broke in nine places, from a second data layout to midnight deadlines. Fixed before anyone saw it.</p></li>
+        <li class="phase on"><p class="when">Step 3</p><h3>Redesign and launch</h3><p>Rebuilt the interface around what to do next, then shipped it behind Duke sign-in in November 2026.</p></li>
+        <li class="phase"><p class="when">Next</p><h3>Grow carefully</h3><p>A daily refresh, tuning the sponsorship rules on real postings, and hosting for the whole class through Fuqua IT.</p></li>
+      </ol>
+      <p class="oos"><b>Out of scope for now:</b> accounts, email reminders and anything that sends a student’s data off their device.</p>
+    </div>
+  </section>
+
+  <section class="sec alt" id="fqc-metrics" aria-labelledby="fqc-metrics-title">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Measuring success</p><h2 class="h2" id="fqc-metrics-title">Count actions, not visits.</h2></div>
+      <div class="tree">
+        <div class="ns"><div class="ns-copy"><p class="kicker">North star</p><h3>Students who act on a listing each week</h3><p>The share of weekly visitors who save a listing, move an application forward or add a reminder. It counts help that turned into action, not page views.</p></div></div>
+        <div class="grid3">
+          <div class="card mgroup"><p class="k in">Input metrics</p><ul><li>Students signing in each week<span>Counted by Cloudflare Access</span></li><li>Listings saved per student<span>A sign the list is relevant</span></li><li>Reminders added<span>Deadlines and sign-up windows</span></li><li>Applications moved past Saved<span>Applied, Interviewing, Offer</span></li></ul></div>
+          <div class="card mgroup"><p class="k gd">Guardrails</p><ul><li>Visa signals reported wrong<span>Must stay near zero</span></li><li>Data freshness<span>Hours since the last refresh</span></li><li>Load time on a phone<span>One page, no server round trips</span></li></ul></div>
+          <div class="card mgroup"><p class="k bz">Outcomes</p><ul><li>Deadlines and sign-ups missed<span>From a short student survey</span></li><li>Applications to roles open to internationals<span>Share of all tracked applications</span></li><li>Students who tell a classmate<span>“Copy details” is built for group chats</span></li></ul></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="fqc-risks">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Risks</p><h2 class="h2" id="fqc-risks">What could go wrong, and what I built against it.</h2></div>
+      <div class="grid3">
+        <article class="card stack risk"><h3>A wrong visa signal</h3><p class="txt">Telling a student a role is open when it isn’t would cost trust fast.</p><p class="fix"><b>Mitigation:</b> show the employer’s label and the posting’s exact words, never a guess, and point to Duke Visa Services.</p></article>
+        <article class="card stack risk"><h3>Stale listings</h3><p class="txt">Seats and statuses change after the data is pulled.</p><p class="fix"><b>Mitigation:</b> “as of” dates on seat counts, sign-up status worked out from the window times, and an Open in CareerBridge button on every listing.</p></article>
+        <article class="card stack risk"><h3>Listings leaking out</h3><p class="txt">The data is meant for Fuqua students only.</p><p class="fix"><b>Mitigation:</b> Duke-only sign-in, no contact data in the page, and uploads that refuse to run without the sign-in in place.</p></article>
+        <article class="card stack risk"><h3>Growth costs money</h3><p class="txt">The free sign-in plan covers 50 students.</p><p class="fix"><b>Mitigation:</b> pilot on the free plan, then move to hosting behind Duke NetID through Fuqua IT.</p></article>
+        <article class="card stack risk"><h3>The feeds change shape</h3><p class="txt">The source data already uses two layouts for the same fields.</p><p class="fix"><b>Mitigation:</b> the cleaner reads both, and tests run on sample data in the real format before every release.</p></article>
+        <article class="card stack risk"><h3>Different screens, different needs</h3><p class="txt">Students check on phones and laptops, in dark mode, with keyboards and screen readers.</p><p class="fix"><b>Mitigation:</b> tested at phone width and in dark mode, with visible keyboard focus, labeled controls and reduced motion.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="fqc-why" style="padding-top:0">
+    <div class="wrap">
+      <div class="why-panel">
+        <p class="kicker">Why I built this</p>
+        <h2 class="h2" id="fqc-why">I’m the <em>user.</em></h2>
+        <p class="lead">I’m an international student in Duke’s Daytime MBA class of 2028. Recruiting meant <b>checking three places</b> and opening posting after posting to see whether I could apply. At Ford, I turned <b>6,000+ test failures a week</b> into work teams could act on. Fuqua Compass brings the same habit to my own search: I wrote the product rules, designed it and built it with Claude Code, from the first data pull to launch.</p>
+        <p style="margin-top:24px"><a class="link" href="#product">Back to the portfolio</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sources" aria-labelledby="fqc-sources" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">Sources</p><h2 class="h2" id="fqc-sources">Where the facts come from.</h2></div>
+      <ol>
+        <li>Fuqua Compass data snapshot of CareerBridge and FuquaConnect listings, via fuqua.app (Nov 4, 2026). Only aggregate counts appear on this page.</li>
+        <li><a href="https://visaservices.duke.edu/visa-categories/f-1/f-1-curricular-practical-training-cpt/" target="_blank" rel="noopener">Duke Visa Services: F-1 Curricular Practical Training (CPT)</a></li>
+        <li><a href="https://www.fuqua.duke.edu/employers/hiring-international-students" target="_blank" rel="noopener">Fuqua: Hiring international students</a></li>
+        <li><a href="https://developers.cloudflare.com/pages/platform/known-issues/" target="_blank" rel="noopener">Cloudflare: Pages known issues, including securing pages.dev with Access</a></li>
+      </ol>
+      <p style="margin-top:28px"><a class="btn outline" href="#product">Back to the portfolio</a></p>
+    </div>
+  </section>
+</div>
+
 <dialog class="cert-dialog" id="cert-dialog" aria-label="Recognition certificate">
   <button type="button" class="cert-close" id="cert-close">Close</button>
   <img src="ford-recognition.webp" width="1280" height="853" alt="Certificate titled “A Token of Appreciation and Pride,” with Ford and Wipro logos and a framed note reading “Impressive work, Shreenidhi. – Bill Ford.” It says Bill Ford appreciated Shreenidhi’s work on the Ford account and credits contributions to automation and critical initiatives that supported Ford’s EV and digital transformation.">
@@ -3721,7 +4129,8 @@ table.rice { min-width: 540px; }
   const VIEWS = {
     'stall-fit': { el: 'view-stall', nav: 'nav-stall', theme: 'auto', full: 'Stall Fit · a case study', short: 'Stall Fit' },
     'off-the-record': { el: 'view-otr', nav: 'nav-otr', theme: 'music', full: 'Off the Record · a case study', short: 'Off the Record' },
-    'show-your-work': { el: 'view-syw', nav: 'nav-syw', theme: 'paper', full: 'Show Your Work · a case study', short: 'Show Your Work' }
+    'show-your-work': { el: 'view-syw', nav: 'nav-syw', theme: 'paper', full: 'Show Your Work · a case study', short: 'Show Your Work' },
+    'fuqua-compass': { el: 'view-fqc', nav: 'nav-fqc', theme: 'compass', full: 'Fuqua Compass · a case study', short: 'Fuqua Compass' }
   };
   const viewHome = document.getElementById('view-home');
   const navHome = document.getElementById('nav-home');
