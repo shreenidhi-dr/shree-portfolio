@@ -428,6 +428,29 @@ i { font-style: normal; }
 @media (max-width: 1000px) { .nav .nav-links .opt { display: none; } }
 @media (max-width: 560px) { .nav .nav-links .opt2 { display: none; } .nav-links .btn { margin-left: 4px; padding: 0 16px; } }
 @media (max-width: 420px) { #nav-stall .btn, #nav-otr .btn, #nav-syw .btn { display: none; } }
+/* "Case studies" in the home menu: a tinted pill with a dot, plus a short wiggle and a ping when the page opens, so
+   visitors notice it. The motion runs twice and stops (under 5 seconds), and is off for reduced motion. On phones it
+   takes the place of "Fit check": next to the name and Contact there is room for one section link. */
+#nav-home .cs-hot { position: relative; background: var(--primary-container); color: var(--on-primary-container); font-weight: 600; transform-origin: 50% 60%; }
+#nav-home .cs-hot:hover { background: var(--primary); color: var(--on-primary); }
+#nav-home .cs-dot { position: absolute; top: 4px; right: 6px; width: 8px; height: 8px; border: 2px solid var(--bg); border-radius: 50%; background: var(--primary); }
+@media (prefers-reduced-motion: no-preference) {
+  #nav-home .cs-hot { animation: cs-wiggle 2s ease-in-out .9s 2; }
+  #nav-home .cs-dot { animation: cs-ping 1.3s ease-out .9s 3; }
+}
+@keyframes cs-wiggle {
+  0%, 34%, 100% { transform: none; }
+  6% { transform: rotate(-5deg) scale(1.06); }
+  12% { transform: rotate(5deg) scale(1.08); }
+  18% { transform: rotate(-4deg) scale(1.08); }
+  24% { transform: rotate(3deg) scale(1.05); }
+  30% { transform: rotate(-1deg) scale(1.02); }
+}
+@keyframes cs-ping {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 60%, transparent); }
+  100% { box-shadow: 0 0 0 9px color-mix(in srgb, var(--primary) 0%, transparent); }
+}
+@media (max-width: 560px) { #nav-home .cs-hot { display: inline-flex; padding: 0 12px; } #nav-home a[href="#why"] { display: none; } }
 
 /* Type and buttons */
 .kicker { color: var(--accent-text); font-size: 1rem; font-weight: 500; letter-spacing: .01em; }
@@ -1490,7 +1513,7 @@ table.rice { min-width: 540px; }
       <a class="opt" href="#glance">Highlights</a>
       <a href="#why">Fit check</a>
       <a class="opt" href="#work">Work</a>
-      <a class="opt2" href="#product">Case studies</a>
+      <a class="opt2 cs-hot" href="#product">Case studies<span class="cs-dot" aria-hidden="true"></span></a>
       <a class="opt" href="#path">Experience</a>
       <a class="btn" href="#contact">Contact</a>
     </nav>
